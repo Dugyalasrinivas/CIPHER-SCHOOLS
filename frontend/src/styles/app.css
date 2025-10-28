@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: #1f1f1f;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  height: 100%;
+}
+
+.file-manager, .editor, .preview {
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.file-manager {
+  background: #f9f9f9;
+}
+
+.file-manager div.active {
+  background-color: #ececec;
+  font-weight: bold;
+}
